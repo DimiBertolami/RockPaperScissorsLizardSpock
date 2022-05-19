@@ -13,16 +13,21 @@
 </head>
 <body>
 <h1>Big Bang Rock Paper Scisscors Lizard Spock!</h1>
+<div id="target">
+    <img src="images/dealer.png" alt="initial image" width="130px" height="130px">
+</div>
 
-<img src="images/rock.jpg" alt="rock" title="rock">
-<img src="images/paper.jpg" alt="paper" title="paper">
-<img src="images/scissors.jpg" alt="scissors" title="scissors">
-<img src="images/lizard.jpg" alt="lizard" title="lizard">
-<img src="images/spock.jpg" alt="spock" title="spock">
-
-
+<br><br><br>
+<div id="player">
+    <h3>You</h3>
+    <button class="btn rounded-pill" style="border: none;" onclick="throwRandomHand()"><img src="images/rock.jpg" alt="Brock" tile="rock button" width="100px" height="100px"></button>
+    <button class="btn rounded-pill" style="border: none" onclick="throwRandomHand()"><img src="images/paper.jpg" alt="Bpaper" tile="paper button" width="100px" height="100px"></button>
+    <button class="btn rounded-pill" style="border: none" onclick="throwRandomHand()"><img src="images/scissors.jpg" alt="Bscissors" tile="scissors button" width="100px" height="100px"></button>
+    <button class="btn rounded-pill" style="border: none" onclick="throwRandomHand()"><img src="images/lizard.jpg" alt="Blizard" tile="lizard button" width="100px" height="100px"></button>
+    <button class="btn rounded-pill" style="border: none" onclick="throwRandomHand()"><img src="images/spock.jpg" alt="spock" tile="spock button" width="100px" height="100px"></button>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+<script src="game.js"></script>
 </body>
 </html>
