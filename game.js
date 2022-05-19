@@ -33,7 +33,7 @@ function funcSpocky(){
 
 function evaluate_Result(dealerPicked, playerPicked){
     if(playerPicked===dealerPicked){
-        alert("no winner")
+        // alert("no winner")
     } else {
         // dealerScore playerScore
         let elDealer = document.getElementById("TotalResultPlayer")
@@ -95,5 +95,6 @@ function throwRandomHand(){
 function RandomInteger(){return Math.floor(Math.random() * arrHands.length)}
 
 function GameReset(){
+    alert("reset clicked")
     location.reload();
 }
