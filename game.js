@@ -41,38 +41,38 @@ function evaluate_Result(dealerPicked, playerPicked){
         switch (dealerPicked){
             case "rock":
                 // alert("dealer picked rock");
-                if (playerPicked==="paper"){console.log("You win!"); elPlayer.textContent = `PLAYER SCORE: ${++playerScore}`}
-                if (playerPicked==="scissors"){alert("Dealer Wins!");elDealer.textContent = `DEALER SCORE: ${++dealerScore}`}
-                if (playerPicked==="lizard"){alert("Dealer Wins!");elDealer.textContent = `DEALER SCORE: ${++dealerScore}`}
-                if (playerPicked==="spock"){alert("You Win!"); elPlayer.textContent = `PLAYER SCORE: ${++playerScore}`}
+                if (playerPicked==="paper"){elPlayer.textContent = `PLAYER SCORE: ${++playerScore}`}
+                if (playerPicked==="scissors"){elDealer.textContent = `DEALER SCORE: ${++dealerScore}`}
+                if (playerPicked==="lizard"){elDealer.textContent = `DEALER SCORE: ${++dealerScore}`}
+                if (playerPicked==="spock"){elPlayer.textContent = `PLAYER SCORE: ${++playerScore}`}
                 break;
             case "paper":
                 // alert("dealer picked paper");
-                if (playerPicked==="rock"){alert("Dealer Wins!");elDealer.textContent = `DEALER SCORE: ${++dealerScore}`}
-                if (playerPicked==="scissors"){alert("You Win!"); elPlayer.textContent = `PLAYER SCORE: ${++playerScore}`}
-                if (playerPicked==="lizard"){alert("You Win!"); elPlayer.textContent = `PLAYER SCORE: ${++playerScore}`}
-                if (playerPicked==="spock"){alert("Dealer Wins!");elDealer.textContent = `DEALER SCORE: ${++dealerScore}`}
+                if (playerPicked==="rock"){elDealer.textContent = `DEALER SCORE: ${++dealerScore}`}
+                if (playerPicked==="scissors"){elPlayer.textContent = `PLAYER SCORE: ${++playerScore}`}
+                if (playerPicked==="lizard"){elPlayer.textContent = `PLAYER SCORE: ${++playerScore}`}
+                if (playerPicked==="spock"){elDealer.textContent = `DEALER SCORE: ${++dealerScore}`}
                 break;
             case "scissors":
                 // alert("dealer picked scissors");
-                if (playerPicked==="paper"){alert("Dealer Wins!");elDealer.textContent = `DEALER SCORE: ${++dealerScore}`}
-                if (playerPicked==="rock"){alert("You Win!"); elPlayer.textContent = `PLAYER SCORE: ${++playerScore}`}
-                if (playerPicked==="lizard"){alert("Dealer Wins!");elDealer.textContent = `DEALER SCORE: ${++dealerScore}`}
-                if (playerPicked==="spock"){alert("You Win!"); elPlayer.textContent = `PLAYER SCORE: ${++playerScore}`}
+                if (playerPicked==="paper"){elDealer.textContent = `DEALER SCORE: ${++dealerScore}`}
+                if (playerPicked==="rock"){elPlayer.textContent = `PLAYER SCORE: ${++playerScore}`}
+                if (playerPicked==="lizard"){elDealer.textContent = `DEALER SCORE: ${++dealerScore}`}
+                if (playerPicked==="spock"){elPlayer.textContent = `PLAYER SCORE: ${++playerScore}`}
                 break;
             case "lizard":
                 // alert("dealer picked lizard");
-                if (playerPicked==="paper"){alert("Dealer Wins");elDealer.textContent = `DEALER SCORE: ${++dealerScore}`}
-                if (playerPicked==="scissors"){alert("You Win!"); elPlayer.textContent = `PLAYER SCORE: ${++playerScore}`}
-                if (playerPicked==="rock"){alert("You Win!"); elPlayer.textContent = `PLAYER SCORE: ${++playerScore}`}
-                if (playerPicked==="spock"){alert("Dealer Wins!");elDealer.textContent = `DEALER SCORE: ${++dealerScore}`}
+                if (playerPicked==="paper"){elDealer.textContent = `DEALER SCORE: ${++dealerScore}`}
+                if (playerPicked==="scissors"){elPlayer.textContent = `PLAYER SCORE: ${++playerScore}`}
+                if (playerPicked==="rock"){elPlayer.textContent = `PLAYER SCORE: ${++playerScore}`}
+                if (playerPicked==="spock"){elDealer.textContent = `DEALER SCORE: ${++dealerScore}`}
                 break;
             case "spock":
                 // alert("dealer picked spock");
-                if (playerPicked==="paper"){alert("You Win!"); elPlayer.textContent = `PLAYER SCORE: ${++playerScore}`}
-                if (playerPicked==="scissors"){alert("Dealer Wins!");elDealer.textContent = `DEALER SCORE: ${++dealerScore}`}
-                if (playerPicked==="lizard"){alert("You Win!"); elPlayer.textContent = `PLAYER SCORE: ${++playerScore}`}
-                if (playerPicked==="rock"){alert("Dealer Wins!");elDealer.textContent = `DEALER SCORE: ${++dealerScore}`}
+                if (playerPicked==="paper"){elPlayer.textContent = `PLAYER SCORE: ${++playerScore}`}
+                if (playerPicked==="scissors"){elDealer.textContent = `DEALER SCORE: ${++dealerScore}`}
+                if (playerPicked==="lizard"){elPlayer.textContent = `PLAYER SCORE: ${++playerScore}`}
+                if (playerPicked==="rock"){elDealer.textContent = `DEALER SCORE: ${++dealerScore}`}
                 break;
         }
     }
@@ -93,3 +93,7 @@ function throwRandomHand(){
 }
 
 function RandomInteger(){return Math.floor(Math.random() * arrHands.length)}
+
+function GameReset(){
+    location.reload();
+}
